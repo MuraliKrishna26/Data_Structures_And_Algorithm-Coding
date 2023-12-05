@@ -3,8 +3,8 @@ public class Fibonacci{
 	/*
 	Recursive.
      fib(n)  = fib(n-1) + fib(n-2) ; n>=2
-	         = n                   ; n = 0 or n = 1
-    */
+	 = n                       ; n = 0 or n = 1
+       */
 
 	public static int fib(int n){
 		// base case
@@ -58,17 +58,13 @@ public class Fibonacci{
 
 	/*
 	The above procedure is called Top Down Approch. 
-
 	Top Down Approch = Recursion + Array .
-	
 	In top down approch, we take a bigger block, then using recursion we go to the smaller blocks and store the data in an array.
 	*/
 
 	/*
-
 	In Dynamic programing, we eliminate recursion. This is done by using buttom up approch. 
 	In buttom up approch, we take smaller blocks and then move to bigger block. 
-	
 	Dynamic Programing = Iterative + Array .
 	*/
 
@@ -88,24 +84,10 @@ public class Fibonacci{
 	}
  
 	/*
-	We have seen :   Recursion ------>  Memorization (top-down)   -------> DP (Buttom Up approch)
+	We have seen:   Recursion ------>  Memorization (top-down)   -------> DP (Buttom Up approach)
 
 	DP can be applied if a problem contains 1. Overlapping Subproblem.
-											2. Optimial Substructure. 
+						2. Optimial Substructure. 
 	*/
 
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
