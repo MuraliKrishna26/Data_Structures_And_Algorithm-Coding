@@ -118,5 +118,38 @@ public class Solution {
 		return arr[n];
 	}
 
-}
 
+	//Dynamic Programing
+	public static int countMinStepsToOne_DP(int n) {
+		//Your code goes here
+
+		if(n == 1){
+			return 0;
+		}
+		if(n == 2 || n == 3){
+			return 1;
+		}
+
+		int arr[] = new int[n+1];
+		arr[1] = 0;
+		arr[2] = 1;
+		arr[3] = 1;
+
+		for(int i=4; i<n+1;i++){
+			int step1 = arr[i-1];
+			int step2 = Integer.MAX_VALUE;
+			int step3 = Integer.MAX_VALUE;
+			
+			if(i%2 == 0){
+				step2 = arr[i/2];
+			}
+			if(i%3 == 0){
+				step3 = arr[i/3];
+			}
+			arr[i] = 1 + Math.min(step1, Math.min(step2, step3));
+		}
+
+		return arr[n];
+	}
+
+}
