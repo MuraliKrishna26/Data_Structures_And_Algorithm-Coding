@@ -1,5 +1,6 @@
 
-//LEETCODE QUESTION : 91. DecodeWays
+//LEETCODE QUESTION: 91. DecodeWays 
+//                       (This question is easier in DP)
 
 /*
 
